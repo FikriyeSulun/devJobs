@@ -1,0 +1,144 @@
+:root {
+
+    --font-primary: 'Kumbh Sans', sans-serif;
+
+    --color-violet: #5964E0;
+    --color-violet-opacity10: #5964E01A;
+    --color-violet-opacity35: #5964E059;
+    --color-light-violet: #939BF4;
+    --color-very-dark-blue: #19202D;
+    --color-very-dark-blue-opacity10: #19202D1A;
+
+    --color-midnight: #121721;
+
+    --color-white: #FFFFFF;
+    --color-white-opacity10: #FFFFFF1A;
+    --color-white-opacity35: #FFFFFF59;
+    --color-light-grey: #F4F6F8;
+    --color-gray: #9DAEC2;
+    --color-dark-gray: #6E8098;
+    --color-dark-gary-opacity20: #6E809833;
+    --color-black: #000000;
+    --color-black-opacity50: #00000080;
+
+}
+
+/* typograpy */
+body {
+    font-family: var(--font-primary);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: var(--color-very-dark-blue);
+    background-color: var(--color-light-grey);
+}
+
+body.dark{
+    color: var(--color-white);
+    background-color: var(--color-midnight);
+}
+
+.typography-gray1 {
+    line-height: 20px;
+    color: var(--color-dark-gray);
+}
+
+.typography-gray2 {
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--color-dark-gray);
+}
+
+.typography-gray3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--color-dark-gray);
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+
+/* buttons */
+button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    padding: auto 30px;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button1 {
+    color: var(--color-white);
+    background-color: var(--color-violet);
+}
+
+.button1:hover {
+    background-color: var(--color-light-violet);
+}
+
+.button2 {
+    color: var(--color-violet);
+    background-color: var(--color-violet-opacity10);
+}
+
+.button2:hover {
+    background-color: var(--color-violet-opacity35);
+}
+
+body.dark .button2 {
+    color: var(--color-white);
+    background-color: var(--color-white-opacity10);
+}
+
+body.dark .button2:hover {
+    background-color: var(--color-white-opacity35);
+}
+
+
+.container {
+    margin: auto 165px;
+}
+
+
+@media (max-width: 1439px) {
+    .container {
+        margin: auto 39px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        margin: auto 24px;
+    }
+}

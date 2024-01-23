@@ -1,0 +1,85 @@
+header {
+    height: 200px;
+}
+
+.header-bg {
+    display: flex;
+    align-items: flex-end;
+    /* position: absolute; */
+    height: 161px;
+    /* width: 100%; */
+    /* overflow-x: hidden; */
+
+    & img {
+        object-fit: cover;
+        min-height: 100%;
+        width: 100%;
+    }
+}
+
+.header-container {
+    position: absolute;
+    z-index: 1;
+    top: 44px;
+    width: -webkit-fill-available;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 44px;
+}
+
+
+
+
+/* light-dark */
+.light-dark-page {
+    display: flex;
+    width: 112px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.light-dark-btn {
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    width: 48px;
+    height: 24px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.push-light-dark {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 14px;
+    height: 14px;
+    background-color: var(--color-violet);
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    /* Animasyon için geçiş efekti ekledik */
+}
+
+body.dark .push-light-dark{
+    transform: translate(157.1428%, -50%);
+}
+
+.light-dark-btn:hover .push-light-dark {
+    background-color: var(--color-light-violet);
+}
+
+/* .pushed {
+    transform: translate(157.1428%, -50%);
+} */
+
+
+@media (max-width: 767px) {
+
+    .header-container {
+        top: 32px;
+    }
+}

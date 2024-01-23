@@ -1,0 +1,109 @@
+.jobCards-container {
+    padding-top: 80px;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.job-cards {
+    margin-bottom: 65px;
+    padding: 0;
+
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    gap: 40px 30px;
+    /* justify-content: flex-start; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.job-card {
+    min-width: calc(100% - 50px);
+    /* min-width: 100%; */
+    /* min-width: 350px; */
+    min-height: 253px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.companyLogo {
+    position: absolute;
+    margin: 0 auto 203px 30px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+}
+
+.jobCardContent {
+    width: 100%;
+    min-width: 350px;
+    min-height: 228px;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+
+    padding: 49px 32px 36px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body.dark .jobCardContent{
+    background-color: var(--color-very-dark-blue);
+}
+
+.job-position-company {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-postedAt-contract {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.point-gray {
+    width: 4px;
+    height: 4px;
+    background-color: var(--color-dark-gray);
+    border-radius: 50%;
+}
+
+.position:hover {
+    color: var(--color-dark-gray);
+}
+
+.location {
+    color: var(--color-violet);
+}
+
+
+.load-more-jobs {
+    margin: 0 auto 104px;
+    width: 141px;
+    height: 48px;
+}
+
+
+@media (max-width: 1024px) {
+
+    .job-cards {
+        gap: 40px 11px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .job-cards {
+        gap: 40px 11px;
+    }
+}
